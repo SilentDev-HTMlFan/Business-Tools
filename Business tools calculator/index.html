@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Tools Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Startup & Small business tools</h1>
+
+            <!--Tab navigation-->
+            <div class="tabs">
+                <div class="tab active" data-tab="burn-rate">Burn Rate</div>
+                <div class="tab" data-tab="cac">CAC Calculator</div>
+                <div class="tab" data-tab="loan-eligibility">Loan Eligibility</div>
+            </div>
+
+            <!--Burn rate Calculator-->
+            <div id="burn-rate" class="calculator">
+                <h2>Burn Rate Calculator</h2>
+                <p>Calculate how long your startup's funds will last</p>
+                <div class="form-group">
+                    <label for="cash-balance">Current Cash Balance($)</label>
+                    <input type="number" id="cash-balance" placeholder="e.g.,5000">
+                </div>
+                <div class="form-group">
+                    <label for="cash-balance">Monthly Expenses($)</label>
+                    <input type="number" id="monthly expenses" placeholder="e.g, 1000"> 
+                </div>
+                <button id="calculate-burn-rate">Calculate</button>
+                <div id="burn-rate-result" class="result"></div>
+            </div>
+
+            <!--CAC Calculator-->
+            <div id="cac" class="calculator hidden">
+                <h2>Customer Acquisition Cost (CAC) Calculator</h2>
+                <p>Measure how much it costs to acquire a bew customer.</p>
+                <div class="form-group">
+                    <label for="marketing-tool">Number of New Customers</label>
+                    <input type="number" id="marketing-cost" placeholder="e.g, 100">
+                </div>
+                <div class="form-group">
+                    <label for="new-customers">Number of New Customers</label>
+                    <input type="number" id="new-customers" placeholder="e.g,100">
+                </div>
+                <button id="calculate-cac">Calculate</button>
+                <div id="cac-result" class="result"></div>
+            </div>
+            <!-- Loan Eligibility Calculator -->
+        <div id="loan-eligibility" class="calculator hidden">
+            <h2>Business Loan Eligibility Calculator</h2>
+            <p>Estimate your chances of qualifying for a business loan.</p>
+            <div class="form-group">
+                <label for="annual-revenue">Annual Revenue ($)</label>
+                <input type="number" id="annual-revenue" placeholder="e.g., 200000">
+            </div>
+            <div class="form-group">
+                <label for="credit-score">Business Credit Score</label>
+                <input type="number" id="credit-score" placeholder="e.g., 650">
+            </div>
+            <div class="form-group">
+                <label for="time-in-business">Time in Business (Years)</label>
+                <input type="number" id="time-in-business" placeholder="e.g., 3">
+            </div>
+            <button id="calculate-loan">Calculate</button>
+            <div id="loan-result" class="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </div>
+    
+</body>
+</html>
